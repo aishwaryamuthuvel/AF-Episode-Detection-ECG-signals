@@ -8,7 +8,7 @@ This an algorithm to automatically detect Atrial Fibrillation (AF) episodes from
 The ECG wave of a typical heartbeat consists of three main components – P wave, QRS complex and T wave. The first “P wave” is created when the impulse travels through the atria, the upper chambers, of the heart. The second part, the “QRS complex” is created by the impulse travelling through the ventricles, the lower chambers, of the heart. The third part, the “T wave” is caused by the electrical recovery of the ventricular chambers to return to their resting state. 
 
 <p align="center">
-<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/ECG.png" width=30% height=30% />
+<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/ECG.png" width=40% height=40% />
 </p>
 
 A normal episode of AF is generally identified by the absence of the P wave or by the unevenness and higher frequency of the ventricular rate for a period of at least 30 seconds. Thus, an AF episode could be identified from an ECG wave either by analyzing the Atrial activity, that is the P wave or by identifying irregularity in the ventricular rate by measuring the time interval between two consecutive R peaks – the R-R interval. The R peak is the most prominent characteristic within the ECG, making it relatively simple to detect. Therefore, the R-R interval irregularity is deduced from a patient’s ECG record to automatically detect an AF episode in them. 
@@ -36,14 +36,32 @@ As classification algorithms, Neural networks, Support Vector Machine and Decisi
 From the decision tree model, the Gini index of each parameter could be computed. These were used as a measure of the importance of the input feature. For each feature, the amount of variance of the data represented by it could be calculated using the equation below where n is the total number of features, m is the feature for which the variance is calculated and Gi is the Gini index corresponding to the feature I.
 
 <p align="center">
-<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/Gini_formula.png" width=30% height=30% />
+<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/Gini_formula.png" width=20% height=20% />
 </p>
 
 The plot in the below figure shows the cumulative variance value versus the number of features that were considered. 
 
 <p align="center">
-<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/Variance.png" width=30% height=30% />
+<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/Variance.png" width=50% height=50% />
 </p>
+
+
+## Results
+
+The table below shows the accuracy, precision and recall values against the test data on using the final models of NN, SVM and Decision tree on it. 
+
+<p align="center">
+<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/Table1.png" width=60% height=60% />
+</p>
+
+
+
+The second table shows the performance of the decision tree models that were trained using the reduced feature set.
+
+<p align="center">
+<img src="https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/Table2.png" width=60% height=60% />
+</p>
+
 
 
 
