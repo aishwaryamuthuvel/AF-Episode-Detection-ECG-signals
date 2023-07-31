@@ -3,6 +3,8 @@
 ## Abstract 
 This an algorithm to automatically detect Atrial Fibrillation (AF) episodes from the ECG data collected from the patients. Atrial Fibrillation is a condition of abnormal and non-uniform beating of the heart. It is caused due to irregularity in the beating of the atrial chambers of the heart at an abnormally increased pace. The algorithm proposed in this paper uses the length of the R-R intervals extracted from the ECG signal as input parameters and classifies it as AF or non-AF. Neural Networks (NN), Support Vector Machine (SVM) and Decision Tree algorithms were trained and used for classification. Dimensionality reduction on the feature set was attempted using the Gini impurity indexes obtained from the Decision tree algorithm and the feature set size was reduced significantly without a significant decrease in the model performance. 
 
+A detailed report on the proposed method could be found [here](https://github.com/aishwaryamuthuvel/AF-Episode-Detection-ECG-signals/blob/main/Atrial%20Fibrillation%20(AF)%20episode%20Detection%20from%20ECG%20signals.pdf).
+
 ## Introduction
 
 The ECG wave of a typical heartbeat consists of three main components – P wave, QRS complex and T wave. The first “P wave” is created when the impulse travels through the atria, the upper chambers, of the heart. The second part, the “QRS complex” is created by the impulse travelling through the ventricles, the lower chambers, of the heart. The third part, the “T wave” is caused by the electrical recovery of the ventricular chambers to return to their resting state. 
